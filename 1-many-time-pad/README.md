@@ -33,7 +33,7 @@ The secuet message is: Whtn using a stream cipher, never use the key more than o
 --
 ```
 
-## Theory and Strategy
+# Theory and Strategy
 
 CORE IDEA: XOR the ciphertexts together, and consider what happens when a space is XORed with a character in [a-z, A-Z].
 
