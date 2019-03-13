@@ -29,15 +29,13 @@ $ python script.py
 $ python toyserver.py
 Serving at localhost : 9000
 ```
-![Test](./img/test.png)
 - `toyserver.py` is dependent on: [pyca/cryptography](https://cryptography.io/en/latest/)
-- The key is: `140b41b22a29beb4061bda66b6747e14`
 
 ### 2. Run the test
 ```
 $ pytest
 ```
-
+![Test](./img/test.png)
 
 ```
 --------------
@@ -45,10 +43,11 @@ Case A
 --------------
 SERVER > localhost:9000
 TARGET > 4ca00ff4c898d61e1edbf1800618fb2828a226d160dad07883d04e008a7897ee2e4b7465d5290d0c0e6c6822236e1daafb94ffe0c5da05d9476be028ad7c1d81
-
+PLAINTEXT > Basic CBC mode encryption needs padding.
 --------------
 Case B
 --------------
 SERVER > crypto-class.appspot.com
 TARGET > f20bdba6ff29eed7b046d1df9fb7000058b1ffb4210a580f748b4ac714c001bd4a61044426fb515dad3f21f18aa577c0bdf302936266926ff37dbf7035d5eeb4
+PLAINTEXT > The Magic Words are Squeamish Ossifrage
 ```
