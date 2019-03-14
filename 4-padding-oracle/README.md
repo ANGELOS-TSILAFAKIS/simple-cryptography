@@ -1,5 +1,5 @@
 # About
-- This script illustrates how you'd be able to decrypt an intercepted ciphertext if the receiver reveals whether a sent ciphertext is of valid format or not. This shows that when using encryption you must prevent padding oracle attacks by either using encrypt-then-MAC
+- This illustrates how you'd be able to decrypt an intercepted ciphertext if the receiver reveals whether a sent ciphertext is of valid format or not. This shows that when using encryption you must prevent padding oracle attacks by either using encrypt-then-MAC
 as in EAX or GCM, or if you must use MAC-then-encrypt then ensure that the site treats padding errors the same way it treats MAC errors.
 
 ### Website behavior
@@ -31,7 +31,9 @@ Serving at localhost : 9000
 ```
 - `toyserver.py` is dependent on: [pyca/cryptography](https://cryptography.io/en/latest/)
 
-### 2. Run the test
+### 2. Run the tests
+- One of the two tests sends requests to the local toy server while the other one requests to a remote server `crypto-class.appspot.com`.
+- NOTE: Because we are repeatedly requesting from a remote server in one of the tests, running `pytest` might take a while.
 ```
 $ pytest
 ```
@@ -51,3 +53,8 @@ SERVER > crypto-class.appspot.com
 TARGET > f20bdba6ff29eed7b046d1df9fb7000058b1ffb4210a580f748b4ac714c001bd4a61044426fb515dad3f21f18aa577c0bdf302936266926ff37dbf7035d5eeb4
 PLAINTEXT > The Magic Words are Squeamish Ossifrage
 ```
+
+# More about Padding Oracle Attack
+- [Robert Heaton](https://robertheaton.com/2013/07/29/padding-oracle-attack/)
+- [Skull Security](https://blog.skullsecurity.org/2013/padding-oracle-attacks-in-depth)
+- [Wikipedia](https://en.wikipedia.org/wiki/Padding_oracle_attack)

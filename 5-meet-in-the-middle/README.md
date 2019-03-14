@@ -1,4 +1,10 @@
-# Meet in the Middle Attack
+# About
+> The meet-in-the-middle attack (MITM) is a generic space–time tradeoff cryptographic attack against encryption schemes which rely on performing multiple encryption operations in sequence. The MITM attack is the primary reason why Double DES is not used and why a Triple DES key (168-bit) can be bruteforced by an attacker with 2^56 space and 2^112 operations
+
+- This script illustrates how we can use MITM to solve a specific discrete log problem
+square-root of the operations of the simplest brute force attack.
+
+# Task
 - Given prime `p`
 - then `Zp* = {1, 2, 3, ..., p-1}`
 - let `g` and `h` be elements in `Zp*` such that
@@ -42,7 +48,9 @@ finding x...
 x =  375374217830
 ```
 
-# Idea
+# The Attack
+
+## Core Idea
 - let `B = 2^20` then `B^2 = 2^40`
 - then `x= xo * B + x1` where `xo` and `x1` are in `{0, 1, ..., B-1}`
 - Then smallest `x` is `x = 0 * B + O = 0`
@@ -53,20 +61,20 @@ h = g^x
 h = g^(xo * B + x1)
 h = g^(xo * B) * g^(x1)
 h / g^(x1) = g^(xo*B)
-h * (g^(-x1) mod p) = (g^B mod p)^xo mod p
-h * (g^-1 mod p)^x1 mod p = (g^B mod p)^xo mod p
 ```
 - Find `xo` and `x1` given `g`, `h`, `B`
 
-# Strategy
+## Strategy
 - Build a hash table key: `h / g^(x1)`, with value `x1` for `x1` in `{ 0, 1, 2, .., 2^20 - 1}`
 - For each value `x0` in `{0, 1, 2, ... 20^20 -1}` check if `(g^B)^(x0) mod P` is in hash table. If it is then you've found `x0` and `x1`
 - Return `x = xo * B + x1`
 
-# Notes
+### Observations
 - Work is `2^20` multiplications and `2^20` lookups in the worst case
-- If we brute forced it, we would do `2^40` multiplications
+- If we attack it by bruteforce , we would do `2^40` multiplications
 - So the work is squareroot of brute force
+
+# Notes
 
 ### Modulo Division
 ```
@@ -74,9 +82,9 @@ h * (g^-1 mod p)^x1 mod p = (g^B mod p)^xo mod p
 
 ```
 
-## Important Optimization
-- Careful not to do redundant exponentiations.
-``` python
+## Optimization
+- Be smart. Do not do redundant exponentiations.
+```python
 
 # Efficient
 gB = g**B % p
@@ -91,14 +99,12 @@ for x in range(n):
     y = g**(B*x)
     z = h*y % p
     print(x, z)
-
-
 ```
 
-### Definition of inverse
+### Modular Inverse
 ```
- Definition of modular inverse in Zp
- y_inverse * y mod P = 1
+
+ y_inverse * y mod p = 1
 ```
 
 ### Inverse of  `x` in `Zp*`
