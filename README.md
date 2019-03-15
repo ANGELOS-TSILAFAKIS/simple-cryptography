@@ -14,7 +14,7 @@
 ### 4. [Padding Oracle Attack](./4-padding-oracle/)
 - This script illustrates how you'd be able to decrypt an intercepted ciphertext if the receiver reveals whether a sent ciphertext is of valid format or not.
 
-### 5.  [Meet In the Middle Attack to solve a discete log problem](./5-meet-in-the-middle/)
+### 5.  [Meet In the Middle Attack](./5-meet-in-the-middle/)
 - The meet-in-the-middle attack (MITM) is a generic space–time tradeoff cryptographic attack. We demonstrate the MITM attack by using it to solve a discrete log problem.
 
 ### 6. [Factoring Challenges](./6-factoring/)
