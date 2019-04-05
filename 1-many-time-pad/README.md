@@ -58,8 +58,8 @@ key = message xor cipher = message xor cipher
 >>> AtoZ = [chr(i) for i in range(ord('A'), ord('Z') + 1)]
 >>> atoz = [chr(i) for i in range(ord('a'), ord('z') + 1)]
 >>> for i, j in zip(AtoZ, atoz):
-...   assert ord(j) ^ ord(' ') == ord(i)
-...   assert ord(i) ^ ord(' ') == ord(j)
+...   assert ord(j) ^ ord(' ') == ord(J)
+...   assert ord(I) ^ ord(' ') == ord(i)
 ```
 
 ### Core Idea
