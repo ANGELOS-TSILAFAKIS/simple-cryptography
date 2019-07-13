@@ -1,4 +1,7 @@
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/minimithi)
+# [🐳](https://mithi.github.io/deep-blueberry) [☕️](https://ko-fi.com/minimithi) [🧧](https://www.paypal.me/minimithi) [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/mithi) 
+```
+33Mudy961bUk9zz35p68g9fE3uuHLRduRp
+```
 
 # About
 - Python scripts that illustrate basic cryptography concepts based on Coursera Standford Cryptography I course and more.
@@ -25,8 +28,6 @@
  ### 7. [Basic RSA](./7-basic-rsa/)
  - An example pipeline that demonstrates basic RSA encryption and decryption.
  
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/minimithi)
-
 # References
 - [Coursera Cryptography I, Stanford, Dan Boneh](https://www-origin.coursera.org/learn/crypto)
 - [A Graduate Course in Applied Cryptography by Dan Boneh and Victor Shoup ](https://toc.cryptobook.us/)
@@ -34,3 +35,7 @@
 - [Crypto Pals Crypto Challenges](https://cryptopals.com/)
 - [My Algorithm Playground: Basic Cryptography Draft Jupyter Notebooks](https://github.com/mithi/algorithm-playground/tree/master/basic-cryptography)
 
+# [🐳](https://mithi.github.io/deep-blueberry) [☕️](https://ko-fi.com/minimithi) [🧧](https://www.paypal.me/minimithi) [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/mithi) 
+```
+33Mudy961bUk9zz35p68g9fE3uuHLRduRp
+```
