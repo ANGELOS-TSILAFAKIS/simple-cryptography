@@ -25,7 +25,7 @@
 ### 6. [Factoring Challenges](./06-factoring/)
 - RSA can be broken when the public modulus `N` is generated incorrectly. These scripts illustrate how you'd be able to factor `N` when `p` and `q` are close to each other.
 
- ### 7. [Basic RSA](./07-basic-rsa/)
+### 7. [Basic RSA](./07-basic-rsa/)
  - An example pipeline that demonstrates basic RSA encryption and decryption.
  
 # References
