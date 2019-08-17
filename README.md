@@ -33,7 +33,6 @@
 - [A Graduate Course in Applied Cryptography by Dan Boneh and Victor Shoup ](https://toc.cryptobook.us/)
 - [Crypto 101 by Laurens Van Houtven](https://www.crypto101.io/)
 - [Crypto Pals Crypto Challenges](https://cryptopals.com/)
-- [My Algorithm Playground: Basic Cryptography Draft Jupyter Notebooks](https://github.com/mithi/algorithm-playground/tree/master/basic-cryptography)
 
 # [🐳](https://mithi.github.io/deep-blueberry) [☕️](https://ko-fi.com/minimithi) [🧧](https://www.paypal.me/minimithi) [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/mithi) 
 ```
